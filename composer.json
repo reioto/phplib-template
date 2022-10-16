@@ -1,0 +1,36 @@
+{
+    "name": "reioto/repository-sample",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "phpspec/prophecy": "^1.15",
+        "phpspec/prophecy-phpunit": "^2.0",
+        "phpstan/phpstan": "^1.8",
+        "jangregor/phpstan-prophecy": "^1.0",
+        "phpstan/extension-installer": "^1.1",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.2"        
+    },
+    "license": "",
+    "authors": [
+        {
+            "name": "reioto",
+            "email": "reioto77@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Namespace\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Namespace\\": "test/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "phpstan/extension-installer": true
+        }
+    }
+}
